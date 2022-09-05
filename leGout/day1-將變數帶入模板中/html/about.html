@@ -26,6 +26,7 @@
                 <div>
                     <a class="link-secondary me-3" href="about.html">家居靈感</a>
                     <a class="link-secondary me-3" href="index.html">新品注目</a>
+                    <a class="link-secondary me-3" href="index.html">展示品專區</a>
                     <a class="link-secondary me-3" href="index.html">現貨商品</a>
                     <a class="link-secondary me-3" href="news.html">最新活動</a>
                 </div>
@@ -147,7 +148,7 @@
                         <div class="card">
                             <img src="../imgs/08.jpg" class="card-img-top" alt="Error">
                             <div class="card-body">
-                                <!-- 將data中的'物件'資料帶入模板 -->
+                                <!-- 將data中的'物件'資料帶入{{}}模板 -->
                                 <h5 class="card-title">{{info.brand}}</h5>
                                 <p class="card-text text-end">{{info.country}}</p>
                                 <p class="card-text">使用椅款：{{info.product}}</p>
@@ -158,7 +159,7 @@
                         <div class="card">
                             <img src="../imgs/07.jpg" class="card-img-top" alt="Error">
                             <div class="card-body">
-                                <!-- 將data中的'陣列'資料帶入模板 -->
+                                <!-- 將data中的'陣列'資料帶入{{}}模板 -->
                                 <h5 class="card-title">{{brands[1]}}</h5>
                                 <p class="card-text text-end">{{countries[0]}}</p>
                                 <p class="card-text">使用椅款：{{products[1]}}</p>
