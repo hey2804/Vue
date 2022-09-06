@@ -58,9 +58,9 @@
         <!-- 練習用 Vue 抓'陣列'資料中的'物件'資料 -->
         <ul class="col-10 row row-cols-1 row-cols-md-3 g-4 ms-2" id="productList">
             <!-- 注意: li 才是重複的tag, 所以 v-for 要寫在 li 裡面-->
-            <li class="col card" v-for="item in productList">
+            <li class="col card" v-for="(item,index) in productList">
                 <img src="../imgs/08.jpg" class="card-img-top" alt="Error">
-                <div class="card-body">
+                <div class="card-body">{{index + 1}} <!-- 用 index 快速得到陣列資料有幾項 -->
                     <!-- 一樣透過 obj.key 的方式存取物件中指定 key 的 value -->
                     <h5 class="card-title">{{item.number}}</h5>                    
                     <p class="card-text">{{item.discribe}}</p>
@@ -150,7 +150,7 @@
                     },
                 ],
             };
-            
+
         var vm = new Vue({
             el: "#productList",
             data: outer_data
