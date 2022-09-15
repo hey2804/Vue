@@ -59,6 +59,13 @@ footer i{    /* 改icon大小用 */
     padding: 0;
     line-height: 240%;
 }
+.arrangement i{
+    font-size: 30px;
+    color: gray;
+}
 button i{
     font-size: 20px;
+}
+.displayNone{
+    display: none;
 }
